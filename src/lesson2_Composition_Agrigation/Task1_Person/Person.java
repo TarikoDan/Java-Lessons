@@ -1,4 +1,6 @@
-package lesson2_Composition_Agrigation;
+package lesson2_Composition_Agrigation.Task1_Person;
+
+import lesson2_Composition_Agrigation.Task1_Person.Email;
 
 public class Person {
     private String name;

@@ -1,4 +1,4 @@
-package lesson2_Composition_Agrigation;
+package lesson2_Composition_Agrigation.Task1_Person;
 
 public class Pet {
     private String kind;
