@@ -28,7 +28,14 @@ public class Main {
         departments.add(depKyiv);
 
         Company coolBit = new Company("coolBit", departments);
-
         System.out.println(coolBit);
+
+        ArrayList<Department> departmentsList = coolBit.getDepartments();
+        for (Department department : departmentsList) {
+            Employee[] employeesList = department.getEmployees();
+            for (Employee employee : employeesList) {
+                System.out.println(employee.getName() + " has worked in " + department.getName() + " for " + employee.getExperience() + "years");
+            }
+        }
     }
 }
