@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Company {
-    public String name;
-    public ArrayList<Department> departments;
+    private String name;
+    private ArrayList<Department> departments;
 
     public Company() {
     }
