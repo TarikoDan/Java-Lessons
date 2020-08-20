@@ -1,6 +1,9 @@
 package lesson2_Composition_Agrigation.Task3_Request;
 
 
+import java.time.LocalDate;
+import java.util.Date;
+
 public class Request {
 
     private int number;
