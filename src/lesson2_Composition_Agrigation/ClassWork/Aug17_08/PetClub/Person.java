@@ -7,21 +7,19 @@ public class Person {
     private String surname;
     private int age;
     private Email email;
-    private Pet pet;
 
     public Person() {
     }
 
     public Person(String name,
                   String surname,
-                  int age,
-//                  String eSite, String eLogin, String ePassword,
-                  Pet pet) {
+                  int age
+    ) {
         this.name = name;
         this.surname = surname;
         this.age = age;
 //        this.email = new Email(eSite, eLogin, ePassword);
-        this.pet = pet;
+//        this.pet = pet;
     }
 
     public String getName() {
@@ -56,14 +54,6 @@ public class Person {
         this.email = email;
     }
 
-    public Pet getPet() {
-        return pet;
-    }
-
-    public void setPet(Pet pet) {
-        this.pet = pet;
-    }
-
     public void register(String eSite, String login, String password) {
         this.email = new Email(eSite, login, password);
         System.out.println("You are registered on " + eSite + "  with: ");
@@ -75,22 +65,13 @@ public class Person {
         this.email.logIn(login, password);
     }
 
-    public void feedPet() {
-        this.pet.voice();
-    }
-
-    public void callPet() {
-        this.pet.piss();
-    }
-
     @Override
     public String toString() {
         return "Person{" +
                 "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", age=" + age +
-                ", email=" + email +
-                ", pet=" + pet +
+//                ", email=" + email +
                 '}';
     }
 }

@@ -1,15 +1,15 @@
 package lesson2_Composition_Agrigation.ClassWork.Aug17_08.PetClub;
 
 public class Pet {
-    private String kind;
+    private PetsKind petsKind;
     private String alias;
     private int age;
 
     public Pet() {
     }
 
-    public Pet(String kind, String alias, int age) {
-        this.kind = kind;
+    public Pet(PetsKind petsKind, String alias, int age) {
+        this.petsKind = petsKind;
         this.alias = alias;
         this.age = age;
     }
@@ -18,16 +18,16 @@ public class Pet {
         return alias;
     }
 
-    public String getKind() {
-        return kind;
+    public PetsKind getKind() {
+        return petsKind;
     }
 
     public void setAlias(String alias) {
         this.alias = alias;
     }
 
-    public void setKind(String kind) {
-        this.kind = kind;
+    public void setKind(PetsKind petsKind) {
+        this.petsKind = petsKind;
     }
 
     public int getAge() {
@@ -39,9 +39,9 @@ public class Pet {
     }
 
     public void voice() {
-        if (this.kind.equals("dog")) {
+        if (this.petsKind.equals("dog")) {
             System.out.println(this.alias + ": - 'Wow - wow-wowww!!!'");
-        }else if (this.kind.equals("cat")) {
+        }else if (this.petsKind.equals("cat")) {
             System.out.println("Mew- miaow-mrrrrrr...");
         }else {
             System.out.println("Shhhhhhhhhhhhhhhhhhhh");
@@ -55,7 +55,7 @@ public class Pet {
 
     @Override
     public String toString() {
-        return kind + "{" +
+        return petsKind + "{" +
                 "alias='" + alias + '\'' +
                 ", age=" + age +
                 '}';
