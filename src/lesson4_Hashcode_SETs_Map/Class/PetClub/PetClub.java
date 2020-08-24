@@ -1,11 +1,11 @@
-package lesson2_Composition_Agrigation.ClassWork.Aug17_08.PetClub;
+package lesson4_Hashcode_SETs_Map.Class.PetClub;
 
 import java.util.*;
 
 public class PetClub {
     private Map<Person, List<Pet>> club;
 
-    public PetClub() {this.club = new HashMap<Person, List<Pet>>(); }
+    public PetClub() {this.club = new HashMap<>(); }
 
     public PetClub(Map<Person, List<Pet>> club) {
         this.club = club;
@@ -20,7 +20,7 @@ public class PetClub {
     }
 
     public void addPerson(Person person) {
-        this.club.put(person, new ArrayList<Pet>());
+        this.club.put(person, new ArrayList<>());
     }
 
     public void removePerson(Person person) {
@@ -39,13 +39,11 @@ public class PetClub {
         this.club.replace(person,pets);
     }
     public void removeSomePetFromAllPersons(Pet pet) {
-        Iterator<Person> personIterator = this.club.keySet().iterator();
-        while (personIterator.hasNext()) {
-            Person next =  personIterator.next();
-            List<Pet> pets = this.club.get(next);
+        for (Person person : this.club.keySet()) {
+            List<Pet> pets = this.club.get(person);
             if (pets.contains(pet)) {
                 pets.remove(pet);
-                this.club.replace(next, pets);
+                this.club.replace(person, pets);
             }
         }
     }

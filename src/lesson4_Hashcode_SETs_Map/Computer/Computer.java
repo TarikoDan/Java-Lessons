@@ -1,4 +1,4 @@
-package lesson4_Hashcode_SETs.Computer;
+package lesson4_Hashcode_SETs_Map.Computer;
 
 
 import java.util.Objects;

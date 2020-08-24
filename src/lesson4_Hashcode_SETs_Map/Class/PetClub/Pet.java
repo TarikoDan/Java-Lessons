@@ -1,4 +1,4 @@
-package lesson2_Composition_Agrigation.ClassWork.Aug17_08.PetClub;
+package lesson4_Hashcode_SETs_Map.Class.PetClub;
 
 public class Pet {
     private PetsKind petsKind;
@@ -39,9 +39,9 @@ public class Pet {
     }
 
     public void voice() {
-        if (this.petsKind.equals("dog")) {
+        if (this.petsKind.equals(PetsKind.DOG)) {
             System.out.println(this.alias + ": - 'Wow - wow-wowww!!!'");
-        }else if (this.petsKind.equals("cat")) {
+        }else if (this.petsKind.equals(PetsKind.CAT)) {
             System.out.println("Mew- miaow-mrrrrrr...");
         }else {
             System.out.println("Shhhhhhhhhhhhhhhhhhhh");

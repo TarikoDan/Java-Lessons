@@ -1,4 +1,4 @@
-package lesson4_Hashcode_SETs.Computer;
+package lesson4_Hashcode_SETs_Map.Computer;
 
 import java.util.*;
 
@@ -47,7 +47,7 @@ public class Main {
         Computer Lenovo_comp5 = new Computer("Lenovo ThinkPad", 2019, 6, 1122, ssd500_Samsung, R7_3700);
 
 
-        List<Computer> computers = new ArrayList<Computer>();
+        List<Computer> computers = new ArrayList<>();
         Computer[] dell_comps = new Computer[]{dell_comp1, dell_comp2, dell_comp3, dell_comp4, dell_comp5, dell_laptop};
         Computer[] hp_comps = new Computer[]{HP_comp1, HP_comp2,HP_comp3,HP_comp4,HP_comp5,HP_comp6,comp};
         Computer[] Lenovo_comps = new Computer[]{Lenovo_comp4, Lenovo_comp3,Lenovo_comp2, Lenovo_comp1, Lenovo_comp5};
@@ -72,8 +72,7 @@ public class Main {
         }
         System.out.println("+++++++++++++++++++");
 
-        Set<Computer> sortComps = new TreeSet<>();
-        sortComps.addAll(computers);
+        Set<Computer> sortComps = new TreeSet<>(computers);
         Iterator<Computer> iterator3 = sortComps.iterator();
         while (iterator3.hasNext()) {
             Computer next = iterator3.next();

@@ -1,4 +1,4 @@
-package lesson2_Composition_Agrigation.ClassWork.Aug17_08.PetClub;
+package lesson4_Hashcode_SETs_Map.Class.PetClub;
 
 import lesson2_Composition_Agrigation.Task1_Person.Email;
 

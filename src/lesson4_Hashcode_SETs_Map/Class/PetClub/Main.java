@@ -1,8 +1,4 @@
-package lesson2_Composition_Agrigation.ClassWork.Aug17_08.PetClub;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+package lesson4_Hashcode_SETs_Map.Class.PetClub;
 
 public class Main {
 
@@ -16,22 +12,25 @@ public class Main {
 
         petClub.addPerson(Andrew);
         System.out.println(petClub);
+
         petClub.addPetToPerson(Andrew,dogJymmi);
         petClub.addPetToPerson(Andrew,dogLessi);
         System.out.println(petClub);
+
         petClub.removePetFromPerson(Andrew, dogJymmi);
         System.out.println(petClub);
+
         Person Ann = new Person("Ann", "Ruut", 74);
         petClub.addPerson(Ann);
         petClub.addPetToPerson(Ann, catREX);
         petClub.addPetToPerson(Ann, dogBox);
-//        petClub.removePerson(Andrew);
         System.out.println(petClub);
-
         petClub.addPetToPerson(Andrew, dogBox);
         System.out.println(petClub);
         petClub.removeSomePetFromAllPersons(dogBox);
         System.out.println(petClub);
+
+        petClub.removePerson(Andrew);
 
     }
 
