@@ -2,6 +2,8 @@ package lesson5_Lambda_Stream.Contact;
 
 import java.util.Arrays;
 import java.util.LinkedList;
+import java.util.List;
+import java.util.stream.Stream;
 
 public class Contact {
     private int id;
@@ -25,7 +27,7 @@ public class Contact {
     }
 
     public static class DAO {
-        LinkedList<Contact> contacts = new LinkedList<>();
+        List<Contact> contacts = new LinkedList<>();
 
         public DAO() {
         }
@@ -33,33 +35,58 @@ public class Contact {
         public LinkedList<Contact> createEmptyList() {
             return new LinkedList<>();
         }
+
         public void addContactToList(Contact contact, LinkedList<Contact> list) {
             list.add(contact);
         }
+
         public void removeContactFromList(Contact contact, LinkedList<Contact> list) {
             list.remove(contact);
         }
 
-        public LinkedList<Contact> addContact(Contact contact ) {
+        public List<Contact> addContact(Contact contact) {
             this.contacts.add(contact);
             return contacts;
         }
-        public LinkedList<Contact> addContactsArray(Contact[] contactArr) {
+
+        public List<Contact> addContactsArray(Contact[] contactArr) {
             this.contacts.addAll(Arrays.asList(contactArr));
             return contacts;
         }
-        public LinkedList<Contact> addContactWithValuesToList(int id, String name, String surname, String email, Company company, Department department) {
+
+        public List<Contact> addContactWithValuesToList(int id, String name, String surname, String email, Company company, Department department) {
             this.contacts.add(new Contact(id, name, surname, email, company, department));
             return contacts;
         }
-        public LinkedList<Contact> removeContact(Contact contact) {
+
+        public List<Contact> removeContact(Contact contact) {
             this.contacts.remove(contact);
             return this.contacts;
         }
+
         public void clearList() {
             this.contacts.clear();
         }
 
+        public void printList() {
+            System.out.println("#" + " " + "id" + " " + "name" + " " + "company" + " " + "department");
+            int i = 1;
+            for (Contact c : this.contacts) {
+                System.out.println(i + " " + c.id + " " + c.name + " " + c.company + " " + c.department);
+                i++;
+            }
+            System.out.println("---------------------");
+        }
+
+        public void printList(List<Contact> list) {
+            System.out.println("#" + " " + "id" + " " + "name" + " " + "company" + " " + "department");
+            int i = 1;
+            for (Contact c : list) {
+                System.out.println(i + " " + c.id + " " + c.name + " " + c.company + " " + c.department);
+                i++;
+            }
+            System.out.println("---------------------");
+        }
     }
 
     public int getId() {
