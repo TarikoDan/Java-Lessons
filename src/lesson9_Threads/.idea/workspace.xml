@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d29c2119-4ee4-42fc-9e4e-7b48a459590f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CommentsStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../different_Tasks/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../different_Tasks/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="d29c2119-4ee4-42fc-9e4e-7b48a459590f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,10 +42,17 @@
       <option name="presentableId" value="Default" />
       <updated>1599732512849</updated>
       <workItem from="1599732514033" duration="47000" />
+      <workItem from="1600707369261" duration="38000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="421" y="115" key="FileChooserDialogImpl" timestamp="1600707403714">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="421" y="115" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1600707403714" />
   </component>
 </project>

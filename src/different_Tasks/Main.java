@@ -1,9 +1,6 @@
 package different_Tasks;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Iterator;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -37,6 +34,7 @@ public class Main {
         System.out.println(mainList);
         flat(mainList.toArray());
         doStuff2(mainList);
+
 
     }
     static void flat(Object[] o) {
@@ -83,9 +81,10 @@ public class Main {
                 if(iterator.hasNext()){
                     System.out.print(", ");
                 }else{
-                    System.out.print("]");
+                    System.out.println("]");
                 }
             }
         }
     }
+
 }
