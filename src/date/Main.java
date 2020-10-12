@@ -55,8 +55,8 @@ public class Main {
         System.out.println(date01);
         System.out.println(date01.getDayOfWeek());
         LocalDate parse = LocalDate.parse("2015-01-01");
-        LocalDate parse1 = LocalDate.parse("2015/01/01", DateTimeFormatter.ofPattern("yyyy/MM/dd"));
         System.out.println(parse);
+        LocalDate parse1 = LocalDate.parse("2015/01/01", DateTimeFormatter.ofPattern("yyyy/MM/dd"));
         System.out.println(parse1);
 
     }
