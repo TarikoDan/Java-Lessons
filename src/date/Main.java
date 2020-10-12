@@ -2,6 +2,8 @@ package date;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -21,7 +23,7 @@ public class Main {
         System.out.println(dateFormat.format(birthDay));
         System.out.println(dayFormat.format(birthDay));
 
-        System.out.println("Enter your Burthday in YYYY/MM/DD format: ");
+        System.out.println("Enter your Birthday in YYYY/MM/DD format: ");
         String yourDay = new Scanner(System.in).nextLine();
         System.out.println("String from Console: " + yourDay);
         SimpleDateFormat formater = new SimpleDateFormat("yyyy/MM/dd");
@@ -45,6 +47,18 @@ public class Main {
         YourSign yourSign = new YourSign();
         ZodiacSigns sign = yourSign.getSign(mm, dd);
         System.out.println("Your Zodiac sign is: " + sign);
+
+        /* ****************************************************** */
+
+        LocalDate now = LocalDate.now();
+        LocalDate date01 = LocalDate.of(2000, 1, 1);
+        System.out.println(date01);
+        System.out.println(date01.getDayOfWeek());
+        LocalDate parse = LocalDate.parse("2015-01-01");
+        LocalDate parse1 = LocalDate.parse("2015/01/01", DateTimeFormatter.ofPattern("yyyy/MM/dd"));
+        System.out.println(parse);
+        System.out.println(parse1);
+
     }
 
 }
